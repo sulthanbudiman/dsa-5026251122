@@ -43,10 +43,9 @@ public class Main {
         scan.close();
         
         System.out.println("===== Problem 1 =====");
-        // Display the total number of songs
+        
         System.out.println("Total songs: " + playlist.size());
 
-        // Display every song in the playlist
         for (int i = 0; i < playlist.size(); i++) {
             System.out.println((i + 1) + ": " + playlist.get(i));
         }
@@ -62,8 +61,6 @@ public class Main {
             String name = scan2.nextLine();
 
             if (participants.add(name)) {
-
-                // Successfully added
 
             } else {
                 duplicateCount++;
